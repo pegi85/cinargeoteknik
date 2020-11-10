@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-image: url(../assets/img/leaf.png);
   }
   
   html {
@@ -195,15 +194,24 @@ body {
     font-size: 40px;
   }
   
-  
+  #footer {
+    background-color: rgb(255, 255, 255);
+    background-image: url(../assets/img/leaf2.png);
+    /* width: 100%; */
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 0;
+    
+  }
   #page2 {
     background-color: rgb(255, 255, 255);
     
     width: 100%;
     background-size: cover;
-    height: 510px;
+    
   }
   #boxColor{
+    
     background-color: rgb(38, 124, 27,0.4);
     margin-top: 40px;
     padding: 40px;

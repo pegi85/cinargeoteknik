@@ -195,12 +195,13 @@ body {
   }
   
   #footer {
-    background-color: rgb(255, 255, 255);
-    background-image: url(../assets/img/leaf2.png);
+    background-color: rgb(224, 108, 108);
+    background-image: url(../assets/img/leaf3.png);
     /* width: 100%; */
     background-size: cover;
     height: 200px;
-    margin-bottom: 0;
+      left: 0;
+   bottom: 0;
     
   }
   #page2 {
@@ -214,6 +215,7 @@ body {
     
     background-color: rgb(38, 124, 27,0.4);
     margin-top: 40px;
+    margin-bottom: 40px;
     padding: 40px;
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

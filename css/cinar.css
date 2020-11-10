@@ -226,7 +226,10 @@ background-color: rgb(38, 124, 27,0.4);
   background-image: url(../assets/img/leaf2.png);
   width: 100%;
   background-size: cover;
-  height: 500px;
+  height: 400px;
+  
+   left: 0;
+   bottom: 0;
   
 }
 

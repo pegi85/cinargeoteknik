@@ -114,96 +114,44 @@ body {
   }
   
   #upBtn:hover {
-    background-color: rgb(247, 165, 12);
-    color: rgb(0, 0, 0);
-  }
-  
-  #whatsBtn {
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    left: 30px;
-    z-index: 99;
-    font-size: 40px;
-    border: none;
-    outline: none;
-    background-color: rgb(38, 124, 27);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    padding: 2px 12px;
-    border-radius: 10px;
-  }
-  
-  .fab:hover {
+    
+    
     background-color: rgb(38, 124, 27);
     color: rgb(247, 165, 12);
-    animation: shake 0.5s;
+    
     animation-iteration-count: infinite;
   }
   
   
-  
-  
-  @keyframes shake {
-    0% {
-      transform: translate(1px, 1px) rotate(0deg);
-    }
-  
-    10% {
-      transform: translate(-1px, -2px) rotate(-1deg);
-    }
-  
-    20% {
-      transform: translate(-3px, 0px) rotate(1deg);
-    }
-  
-    30% {
-      transform: translate(3px, 2px) rotate(0deg);
-    }
-  
-    40% {
-      transform: translate(1px, -1px) rotate(1deg);
-    }
-  
-    50% {
-      transform: translate(-1px, 2px) rotate(-1deg);
-    }
-  
-    60% {
-      transform: translate(-3px, 1px) rotate(0deg);
-    }
-  
-    70% {
-      transform: translate(3px, 1px) rotate(-1deg);
-    }
-  
-    80% {
-      transform: translate(-1px, -1px) rotate(1deg);
-    }
-  
-    90% {
-      transform: translate(1px, 2px) rotate(0deg);
-    }
-  
-    100% {
-      transform: translate(1px, -2px) rotate(-1deg);
-    }
+  .fab{
+    font-size: 36px;
   }
   
   .fas {
-    font-size: 40px;
+    font-size:24px;
   }
-  
-  #footer {
-    background-color: rgb(224, 108, 108);
-    background-image: url(../assets/img/leaf3.png);
-    /* width: 100%; */
-    background-size: cover;
-    height: 200px;
-      left: 0;
-   bottom: 0;
+  #footData {
+    margin-top: 50px;
+    padding: 10px;
     
-  }
+    }
+    
+    
+    #footer {
+      background-color: rgb(38, 124, 27,0.4);
+      background-image: url(/assets/img/leaf.png);
+      background-size: auto;
+        width: 100%;
+       height: auto;
+         left: 0;
+       bottom: 0;
+      
+    }
+    .footContent{
+    padding: 10px;
+    
+    }
+  
   #page2 {
     background-color: rgb(255, 255, 255);
     
@@ -223,3 +171,9 @@ body {
   .hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
   }
+  .imgBox{
+    background-color:rgb(38, 124, 27, 0.5);
+    padding: 5px;
+  }
+
+  

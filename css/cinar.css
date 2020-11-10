@@ -223,7 +223,7 @@ background-color: rgb(38, 124, 27,0.4);
 
 #footer {
   background-color: rgb(255, 255, 255);
-  background-image: url(/assets/img/leaf.png);
+  background-image: url(../assets/img/leaf.png);
   width: 100%;
   background-size: cover;
   height: 500px;
@@ -232,7 +232,7 @@ background-color: rgb(38, 124, 27,0.4);
 
 #page1 {
   background-size: cover;
-  background-image: url(/assets/img/soil3.png);
+  background-image: url(../assets/img/soil3.png);
   height: 600px;
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

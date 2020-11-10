@@ -197,7 +197,7 @@ body {
   
   #page2 {
     background-color: rgb(255, 255, 255);
-    background-image: url(/assets/img/leaf.png);
+    background-image: url(../assets/img/leaf.png);
     width: 100%;
     background-size: cover;
     height: 510px;

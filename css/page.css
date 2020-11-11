@@ -121,10 +121,18 @@ body {
     
     animation-iteration-count: infinite;
   }
-  
+  .btn {
+    margin-top: 10px;
+   
+      color: green !important; 
+     
+    
+    font-size: 36px !important; 
+    cursor: pointer; 
+  }
   
   .fab{
-    font-size: 36px;
+    font-size: 26px;
   }
   
   .fas {

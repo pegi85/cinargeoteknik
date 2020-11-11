@@ -11,10 +11,17 @@ html {
   background-color: rgb(38, 124, 27);
   color: #f1f1f1;
   padding: 10px;
-  
+  font-size: small;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   
 }
+#headerMob{
+  background-color: rgb(38, 124, 27);
+  display: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+}
+
 hr.new4 {
   border:2px solid rgb(255, 255, 255);
 }
@@ -28,6 +35,9 @@ hr.new4 {
 @media screen and (max-width: 768px) {
   #header1 {
     display: none;
+  }
+  #headerMob{
+    display: block;
   }
 
   #logo {
@@ -143,10 +153,6 @@ hr.new4 {
 
 
 
-.fas {
-  font-size: 24px;
-}
-
 
 #footData {
 margin-top: 50px;
@@ -170,12 +176,12 @@ padding: 10px;
 
 }
 
-#page1 {
-  background-size: cover;
-  background-image: url(../assets/img/soil3.png);
-  height: 600px;
+#calismaAlani {
+ 
+  height: auto;
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 @media screen and (max-width: 580px) {
   #page1{
@@ -186,6 +192,8 @@ display: contents;
 
 .margining {
   margin-top: 50px;
+ 
+  
 }
 
 .imgSize {
@@ -199,13 +207,14 @@ display: contents;
 }
 .imgBox{
   background-color:rgb(38, 124, 27, 0.5);
-  padding: 5px;
+  padding: 3px;
 }
 /* image overlay for hizmet part */
 .hizmetPic {
   position: relative;
   width: 100%;
   max-width: 300px;
+  
 }
 
 .image {
@@ -241,15 +250,28 @@ display: contents;
 /* social media buttons */
 
 .btn {
-  margin-top: 16px;
-  margin-left: 5px;
-    color: green !important; 
-  padding: 30px ; 
-  
-  font-size: 36px !important; 
+  margin-top: 10px;
+      color: green !important; 
+    font-size: 36px !important; 
   cursor: pointer; 
 }
+.btn2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+      color: rgb(255, 255, 255) !important; 
+    font-size: 15px !important; 
+    padding: 3px;
+  cursor: pointer;
+}
 
+
+.fab{
+  font-size: 26px;
+}
+
+.fas {
+  font-size: 20px;
+}
 
 /* .btn:hover {
   background-color: rgb(223, 252, 223);

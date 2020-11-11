@@ -13,9 +13,10 @@ html {
   padding: 10px;
   font-size: small;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+
 }
-#headerMob{
+
+#headerMob {
   background-color: rgb(38, 124, 27);
   display: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -23,7 +24,7 @@ html {
 }
 
 hr.new4 {
-  border:2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
 }
 
 #logo {
@@ -36,7 +37,8 @@ hr.new4 {
   #header1 {
     display: none;
   }
-  #headerMob{
+
+  #headerMob {
     display: block;
   }
 
@@ -118,10 +120,11 @@ hr.new4 {
 }
 
 .navbar-toggler {
-  background-color: rgb(38, 124, 27,0.7) !important;
+  background-color: rgb(38, 124, 27, 0.7) !important;
 
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
   color: black !important;
 }
 
@@ -143,11 +146,11 @@ hr.new4 {
 }
 
 #upBtn:hover {
-    
-    
+
+
   background-color: rgb(38, 124, 27);
   color: rgb(247, 165, 12);
-  
+
   animation-iteration-count: infinite;
 }
 
@@ -155,45 +158,47 @@ hr.new4 {
 
 
 #footData {
-margin-top: 50px;
-padding: 10px;
+  margin-top: 50px;
+  padding: 10px;
 
 }
 
 
 #footer {
-  background-color: rgb(38, 124, 27,0.4);
+  background-color: rgb(38, 124, 27, 0.4);
   background-image: url(/assets/img/leaf.png);
   background-size: auto;
-    width: 100%;
-   height: auto;
-     left: 0;
-   bottom: 0;
-  
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: 0;
+
 }
-.footContent{
-padding: 10px;
+
+.footContent {
+  padding: 10px;
 
 }
 
 #calismaAlani {
- 
+
   height: auto;
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+
 }
+
 @media screen and (max-width: 580px) {
-  #page1{
-display: contents;
+  #page1 {
+    display: contents;
   }
 
 }
 
 .margining {
   margin-top: 50px;
- 
-  
+
+
 }
 
 .imgSize {
@@ -205,16 +210,18 @@ display: contents;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.imgBox{
-  background-color:rgb(38, 124, 27, 0.5);
+
+.imgBox {
+  background-color: rgb(38, 124, 27, 0.5);
   padding: 3px;
 }
+
 /* image overlay for hizmet part */
 .hizmetPic {
   position: relative;
   width: 100%;
   max-width: 300px;
-  
+
 }
 
 .image {
@@ -247,25 +254,27 @@ display: contents;
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 /* social media buttons */
 
 .btn {
   margin-top: 10px;
-      color: green !important; 
-    font-size: 36px !important; 
-  cursor: pointer; 
+  color: green !important;
+  font-size: 36px !important;
+  cursor: pointer;
 }
+
 .btn2 {
   margin-top: 5px;
   margin-bottom: 5px;
-      color: rgb(255, 255, 255) !important; 
-    font-size: 15px !important; 
-    padding: 5px;
+  color: rgb(255, 255, 255) !important;
+  font-size: 15px !important;
+  padding: 5px;
   cursor: pointer;
 }
 
 
-.fab{
+.fab {
   font-size: 26px;
 }
 
@@ -278,4 +287,3 @@ display: contents;
   border-radius: 15px;
   
 } */
-

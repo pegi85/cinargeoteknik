@@ -172,6 +172,7 @@ hr.new4 {
   height: auto;
   left: 0;
   bottom: 0;
+  color: black;
 
 }
 
@@ -182,12 +183,22 @@ hr.new4 {
 
 #calismaAlani {
 
+
   height: auto;
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 50px;
   margin-bottom: 50px;
+  color: black;
 
+}
+#guncel{
+  height:auto;
+  width: 100%;
+  text-align: end;
+  color: white;
+
+  
 }
 
 
@@ -255,8 +266,22 @@ img {
 .contain {
   padding: 1px 16px;
   background-color:rgba(183, 226, 177, 0.5) ;
+  color: black;
 }
 .margining{
+        padding: 20px;
+}
+
+#alan-header{
+  background-color:rgb(38, 124, 27, 0.4);
+  padding: 10px;
+  text-align: center;
+  color: black;
+  border-radius: 5px 5px 5px 5px;
   
-  margin: 30px;
+}
+#colColor{
+  background-color:rgba(183, 226, 177, 0.5) ;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
 }

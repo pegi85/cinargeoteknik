@@ -201,9 +201,18 @@ hr.new4 {
   
 }
 
-
-
-
+.imgsize{
+  width: 40%;
+}
+.liveProjects{
+  margin-top: 20px;
+  padding: 30px;
+}
+.bColor{
+  background-color: rgb(183, 226, 177, 0.5);
+  padding: 20px;
+  
+}
 
 
 /* social media buttons */

@@ -178,40 +178,58 @@ hr.new4 {
 
 .footContent {
   padding: 10px;
-
 }
 
+
+
 #calismaAlani {
-
-
-  height: auto;
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 50px;
   margin-bottom: 50px;
   color: black;
-
 }
-#guncel{
-  height:auto;
-  width: 100%;
-  text-align: end;
-  color: white;
 
-  
-}
 
 .imgsize{
   width: 40%;
+  
+  
 }
 .liveProjects{
-  margin-top: 20px;
-  padding: 30px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  
 }
 .bColor{
   background-color: rgb(183, 226, 177, 0.5);
   padding: 20px;
+  border-radius: 10px;
+    }
+
+#guncel{
+  background-color: rgb(38, 124, 27, 0.4) ;
+  padding: 5px;
+  height: 60px;
   
+}
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('/assets/images/2012.jpg');
+
+  /* Full height */
+  height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -281,7 +299,7 @@ img {
         padding: 20px;
 }
 
-#alan-header{
+.alan-header{
   background-color:rgb(38, 124, 27, 0.4);
   padding: 10px;
   text-align: center;

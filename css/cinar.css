@@ -236,6 +236,13 @@ body, html {
 @media only screen and (max-device-width: 786px) {
   .parallax {
     background-attachment: scroll;
+    background-size: contain;
+  }
+  #calismaAlani{
+    margin-bottom: 1px;
+  }
+  .liveProjects{
+    margin-top: 5px;
   }
 }
 

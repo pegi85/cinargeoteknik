@@ -193,6 +193,7 @@ hr.new4 {
 
 .imgsize{
   width: 40%;
+  height: 100%;
   
   
 }
@@ -220,7 +221,7 @@ body, html {
 
 .parallax {
   /* The image used */
-  background-image: url('./assets/images/2012.jpg');
+  background-image: url('../assets/images/2012.jpg');
 
   /* Full height */
   height: 300px; 

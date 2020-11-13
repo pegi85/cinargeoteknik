@@ -232,7 +232,12 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 786px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 
 /* social media buttons */
 

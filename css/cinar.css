@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  
 }
 
 html {
@@ -318,6 +319,7 @@ img {
   text-align: center;
   color: black;
   border-radius: 5px 5px 5px 5px;
+ 
   
 }
 #colColor{
@@ -325,3 +327,38 @@ img {
   padding: 10px;
   border-radius: 5px 5px 5px 5px;
 }
+
+
+/* // fading text// */
+.fading{
+  animation-duration: 3s;
+  animation-name: slide;
+}
+@keyframes slide {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/* // fade in // */
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+

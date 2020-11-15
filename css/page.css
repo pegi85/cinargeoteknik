@@ -146,6 +146,13 @@ html {
   padding: 5px;
   cursor: pointer;
 }
+.btn3{
+  margin-top: 10px;
+  color: green !important;
+  font-size: 24px !important;
+  cursor: pointer;
+  
+}
 
 .fab {
   font-size: 26px;
@@ -186,11 +193,10 @@ html {
 
 }
 
-#boxColor {
-
+.boxColor {
+border-radius: 30px;
   background-color: rgb(38, 124, 27, 0.4);
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 50px;
   padding: 40px;
   font-size: medium;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -224,3 +230,4 @@ html {
   height: 80%;
   
 }
+

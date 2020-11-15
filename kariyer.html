@@ -83,28 +83,33 @@
 
 
 
-    <div id="page2" class="container-fluid ">
-        <div id="boxColor" class="container  ">
-            <div class="row d-flex justify-content-center align-items-center">
+    <div class="container boxColor">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-6">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="usr">İsim Soyisim:</label>
+                        <input type="text" class="form-control" id="usr" placeholder="İsim Soyisim">
+                    </div>
 
-                <div class="col-sm-7 d-flex justify-content-center  ">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate arcu sit amet sem
-                        pellentesque, sed tincidunt tellus sagittis. Integer eget varius est. Vivamus eu lobortis ex,
-                        sed fringilla tortor. Praesent mattis efficitur maximus. Phasellus eget finibus sapien, vel
-                        sollicitudin nulla. Praesent lobortis, quam id maximus tristique, risus turpis bibendum leo, nec
-                        luctus purus mauris in nulla. Nullam sed elit vel nisl pellentesque placerat sed id lorem.
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Telefon:</label>
+                        <input type="text" class="form-control" id="tel" placeholder="Telefon">
+                    </div>
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <button type="submit" class="btn3 btn-default">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-1">
 
-                        Suspendisse consequat vel lacus in rutrum. Nunc molestie dui vitae sapien malesuada, quis
-                        molestie diam rhoncus. Vestibulum in gravida felis. Integer feugiat consequat ligula vitae
-                        faucibus. Mauris nec sapien sit amet mauris accumsan faucibus. Nam vel justo iaculis, tincidunt
-                        lectus at, tempus turpis. Donec varius tristique hendrerit.</p>
-                </div>
-                <div class="col-sm-2 d-flex justify-content-center ">
+            </div>
+            <div class="col-sm-3">
 
-                </div>
-                <div class="col-sm-3 d-flex justify-content-center ">
-                    <img src="./assets/images/2441.JPG" class="hover-shadow imgBox" alt="company header" srcset="">
-                </div>
             </div>
         </div>
     </div>

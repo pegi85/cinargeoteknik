@@ -138,6 +138,7 @@ html {
   font-size: 36px !important;
   cursor: pointer;
 }
+
 .btn2 {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -146,12 +147,13 @@ html {
   padding: 5px;
   cursor: pointer;
 }
-.btn3{
+
+.btn3 {
   margin-top: 10px;
   color: green !important;
   font-size: 24px !important;
   cursor: pointer;
-  
+
 }
 
 .fab {
@@ -185,21 +187,18 @@ html {
 
 }
 
-#page2 {
-  background-color: rgb(255, 255, 255);
-
-  width: 100%;
-  background-size: cover;
-
+.margining{
+  margin: 50px;
 }
 
 .boxColor {
-border-radius: 30px;
+  border-radius: 30px;
   background-color: rgb(38, 124, 27, 0.4);
   margin: 50px;
   padding: 40px;
   font-size: medium;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 .hover-shadow {
@@ -210,13 +209,15 @@ border-radius: 30px;
   background-color: rgb(38, 124, 27, 0.5);
   padding: 5px;
 }
+
 /* // map size// */
 .map {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
@@ -228,16 +229,33 @@ border-radius: 30px;
   right: 0;
   width: 100%;
   height: 80%;
-  
+
 }
 
-.imgsize{
+.imgsize {
   width: 40%;
   height: 100%;
-  
-} 
-.liveProjects{
-  margin-top: 60px;
-  
-  
+
 }
+
+.liveProjects {
+  margin-top: 60px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.0) !important;
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+
+}
+

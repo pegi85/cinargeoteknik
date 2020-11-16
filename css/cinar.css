@@ -273,16 +273,56 @@ body, html {
   font-size: 20px;
 }
 
+
+
+#myCarousel{
+display: block;
+}
+#caroselmob{
+  display: none;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: slideBg 12s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  width: 100%;
+  height: 100vh;
+}
+@keyframes slideBg {
+  0% {
+    background-image: url('../assets/images/201000.jpg');
+  }
+
+  40% {
+    background-image: url('../assets/images/204444.jpg');
+  }
+
+
+  80% {
+    background-image: url('../assets/images/200666.jpg');
+  }
+
+  100% {
+    background-image: url('../assets/images/208888.jpg');
+  }
+
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 580px) {
-
-  .item {
-    width: 150%;
-  }
-
-  .carousel-caption {
+  #myCarousel{
     display: none;
-  }
-
+    }
+    #caroselmob{
+      display: block;
+    }
+  
 }
 
 /* //card designing// */

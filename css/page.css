@@ -259,3 +259,14 @@ html {
 
 }
 
+/* // fade in // */
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+

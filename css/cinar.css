@@ -212,7 +212,13 @@ hr.new4 {
   background-color: rgb(38, 124, 27, 0.4) ;
   padding: 5px;
   height: 60px;
-  
+  }
+
+#calisma{
+  background-color: rgb(38, 124, 27, 0.4) ;
+  padding: 5px;
+  height: 60px;
+  margin-top: 50px;
 }
 
 body, html {
@@ -274,20 +280,20 @@ body, html {
 }
 
 
-
+/* // phone and web background images size// */
 #myCarousel{
 display: block;
 }
 #caroselmob{
   display: none;
-  background-attachment: fixed;
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   animation: slideBg 12s linear infinite 0s;
   animation-timing-function: ease-in-out;
-  
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 @keyframes slideBg {
   0% {
@@ -310,11 +316,6 @@ display: block;
 }
 
 
-
-
-
-
-
 @media screen and (max-width: 580px) {
   #myCarousel{
     display: none;
@@ -331,6 +332,7 @@ display: block;
   transition: 0.3s;
   width: 100%;
   border-radius: 5px;
+  
   
 
 }
@@ -385,10 +387,27 @@ img {
   }
 }
 
+#hizmetMob{
+display: none;
+margin-bottom: 30px;
+margin-top: 30px;
+}
 
-
-
-
+#hizmetWeb{
+display: block;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+ 
+@media screen and (max-width: 580px) {
+  #hizmetMob{
+    display: block;
+    }
+    #hizmetWeb{
+      display: none;
+    }
+  
+}
 
 /* // fade in // */
 .fade-in {
@@ -401,3 +420,48 @@ img {
 }
 
 
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(52, 139, 40, 0.8);
+}
+
+/* On smaller screens, decrease text size
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+} */

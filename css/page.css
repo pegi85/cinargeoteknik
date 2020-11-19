@@ -7,7 +7,8 @@ html {
 }
 
 #logo {
-  width: 130px;
+  width: 100px;
+
 
 }
 
@@ -25,23 +26,88 @@ html {
   }
 
   #logo {
-    width: 150px !important;
+    width: 100px !important;
     margin-top: 0 !important;
+    
   }
 
-  #navbarSub {
+  
+  #navbarsub {
     position: relative !important;
     box-shadow: none !important;
   }
 }
 
-.nav-img {
-  margin-top: 50px;
-}
 
 .navbar {
   border-radius: 0px !important;
 }
+
+#navbarSub {
+  overflow: hidden;
+    transition: 0.4s;
+    width: 100%;
+  top: 0;
+  z-index: 99;
+  box-shadow: 5px 5px 10px rgb(38, 124, 27);
+    background-color: rgba(255, 255, 255, );
+  padding: 20px;
+  
+  position: relative;
+  
+  
+
+}
+
+#navbarSub a {
+  float: left;
+  color: rgb(38, 124, 27);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+
+}
+
+#navbarSub #logo {
+
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbarSub a:hover {
+  text-decoration: underline;
+  color: rgb(235, 121, 15);
+}
+
+
+
+
+@media screen and (max-width: 580px) {
+  #navbarSub {
+    padding: 10px 10px !important;
+
+  }
+
+  #navbarSub a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  
+}
+
+.navbar-toggler {
+  background-color: rgb(38, 124, 27, 0.7) !important;
+
+}
+
+.navbar-toggler-icon {
+  color: black !important;
+}
+/* 
 
 #navbarSub {
   overflow: hidden;
@@ -58,7 +124,7 @@ html {
 
 #navbarSub a {
   float: left;
-  color: rgb(38, 124, 27);
+  color: rgb(38, 124, 27) !important;
   text-align: center;
   padding: 10px;
   text-decoration: none;
@@ -94,6 +160,7 @@ html {
     float: none;
     display: block;
     text-align: left;
+    
   }
 
   #navbar-right {
@@ -104,7 +171,7 @@ html {
 .navbar-toggler {
   background-color: rgb(38, 124, 27, 0.7) !important;
 
-}
+} */
 
 /* scrol up btn */
 #upBtn {

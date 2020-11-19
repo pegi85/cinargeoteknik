@@ -10,12 +10,14 @@ function scrollFunction() {
     document.getElementById("logo").style.marginTop = "0px";
     document.getElementById("navbar").style.backgroundColor = "rgb(255, 255, 255)";
     document.getElementById("navbar").style.boxShadow = "5px 5px 10px rgb(38, 124, 27)";
+    document.getElementById("navbar").style.marginTop = "0";
   } else {
     document.getElementById("navbar").style.padding = "10px 3px";
     document.getElementById("logo").style.width = "250px";
     document.getElementById("navbar").style.backgroundColor = "rgb(0, 0, 0,0.0)";
     document.getElementById("navbar").style.boxShadow = "none";
-    document.getElementById("logo").style.marginTop = "50px";
+    document.getElementById("logo").style.marginTop = "30px";
+    document.getElementById("navbar").style.marginTop = "30px";
   }
 }
 // changing header size when scrolling . header and navigation fixed top when scrolling//

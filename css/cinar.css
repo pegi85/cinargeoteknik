@@ -212,20 +212,21 @@ hr.new4 {
   border-radius: 10px;
     }
 
-#guncel{
+#guncel, #calisma{
   background-color: rgb(38, 124, 27, 0.4) ;
-  padding: 20px;
-  height: 100px;
+  padding-top: 2px ;
+  padding-bottom: 2px;
+  height: 60px;
   margin-top: 50px;
   margin-bottom: 50px;
+  width: 35%;
   }
 
-#calisma{
-  background-color: rgb(38, 124, 27, 0.4) ;
-  padding: 20px;
-  height: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+
+@media only screen and (max-device-width: 786px) {
+  #calisma, #guncel{
+    width: 80%;
+  } 
 }
 
 body, html {
@@ -476,7 +477,3 @@ img {vertical-align: middle;}
   background-color: rgba(52, 139, 40, 0.8);
 }
 
-/* On smaller screens, decrease text size
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-} */

@@ -11,7 +11,7 @@ html {
   height: auto;
   background-color: rgb(38, 124, 27);
   color: #f1f1f1;
-  padding: 10px;
+  padding: 12px;
   font-size: small;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   z-index: 1000;
@@ -272,6 +272,7 @@ body, html {
 .btn2 {
   margin-top: 5px;
   margin-bottom: 5px;
+  
   color: rgb(255, 255, 255) !important;
   font-size: 15px !important;
   padding: 5px;
@@ -301,6 +302,7 @@ body, html {
 /* // phone and web background images size// */
 #firstCarousel{
 display: block;
+
 }
 #caroselmob{
   display: none;

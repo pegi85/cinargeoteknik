@@ -317,16 +317,16 @@ display: block;
 }
 @keyframes slideBg {
   0% {
-    background-image: url('../assets/images/201000.jpg');
+    background-image: url('../assets/images/204444.jpg');
   }
 
   40% {
-    background-image: url('../assets/images/204444.jpg');
+    background-image: url('../assets/images/003-.png');
   }
 
 
   80% {
-    background-image: url('../assets/images/200666.jpg');
+    background-image: url('../assets/images/03-.jpg');
   }
 
   100% {

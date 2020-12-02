@@ -272,10 +272,9 @@ body, html {
 .btn2 {
   margin-top: 5px;
   margin-bottom: 5px;
-  
-  color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255) !important;
   font-size: 15px !important;
-  padding: 5px;
+  padding-left: 12px;
   cursor: pointer;
 }
 
@@ -292,7 +291,9 @@ body, html {
 
 
 
-
+.carousel-indicators{
+  margin-bottom: 80px;
+}
 
  /* Make the image fully responsive */
  .carousel-inner img {

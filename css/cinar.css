@@ -354,6 +354,7 @@ display: block;
   width: 100%;
   border-radius: 5px;
   
+  
 }
 
 .card:hover {
@@ -412,11 +413,7 @@ margin-bottom: 30px;
 margin-top: 30px;
 }
 
-#hizmetWeb{
-display: block;
-margin-top: 50px;
-margin-bottom: 50px;
-}
+
  
 @media screen and (max-width: 580px) {
   #hizmetMob{
@@ -480,3 +477,90 @@ img {vertical-align: middle;}
   background-color: rgba(52, 139, 40, 0.8);
 }
 
+
+
+.carouselbox{
+  
+  height: 250px;
+  width: auto;
+    overflow: hidden;
+        text-align: center;
+        display: flex;
+    align-items: center;
+    
+}
+.carouselbox img{
+  width:350px;
+    height: 200px;
+  background-size: cover;
+      cursor: pointer;
+  transition: 0.5s ease ;
+  z-index: 2;
+}
+
+
+#carousel2{
+    margin-top: 50px;
+  margin-bottom: 100px;
+    height: 500px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  }
+
+.carousel2{
+  margin-top: 100px;
+  margin-bottom: 150px;
+  height: 250px;
+  width:100%;
+  position: relative;
+}
+.carousel2 .switchLeft,
+.carousel2 .switchRight {
+color: rgb(0, 0, 0);
+background-color: rgba(38, 124, 27, 0.425);
+font-weight: bold;
+height: 100%;
+width: 45px;
+line-height: 250px;
+font-size: 25px;
+text-align: center;
+cursor: pointer;
+font-family: sans-serif;
+top: 0;
+z-index: 3;
+}
+.carousel2 .switchLeft{
+  position: absolute;
+  left:-50px ;
+ 
+}
+
+.carousel2 .switchRight{
+  position: absolute;
+  right:-50px ;
+}
+
+
+
+
+
+/* // captions for pics// */
+.inside {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+  background: none;
+  margin: 10px;
+}
+.inside .text {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+}

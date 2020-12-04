@@ -1,5 +1,6 @@
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
+const sliding = document.querySelector(".carouselbox")
 
 
 
@@ -84,34 +85,65 @@ sliders.forEach(slider => {
 
 
 
-// slide show //
-var slideIndex = 1;
-showSlides(slideIndex);
+// // slide show //
+// var slideIndex = 1;
+// showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {slideIndex = 1}    
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";  
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//       dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " active";
+// }
 
 
 
+ // slider faaliet alani//
+ var scrollPerClick;
+ var ImagePadding = 20
  
+ 
+ var scrollAmount = 0;
+function sliderScrollLeft(){
+  sliding.scrollTo ({
+     top: 0,
+     left: (scrollAmount -= scrollPerClick),
+     behavior: "smooth"
+
+  });
+
+if(scrollAmount < 0){
+    scrollAmount = 0
+}
+}
+
+function sliderScrollRight(){
+ if(scrollAmount <= sliding.scrollWidth - sliding.clientWidth){
+    sliding.scrollTo({
+        top: 0,
+        left: (scrollAmount += scrollPerClick),
+        behavior: "smooth",
+    }); 
+ }
+
+}
+
+
+scrollPerClick =380;

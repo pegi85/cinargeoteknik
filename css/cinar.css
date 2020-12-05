@@ -76,9 +76,7 @@ hr.new4 {
   z-index: 99;
   box-shadow: none;
   margin-top: 30px;
-  
-
-}
+  }
 
 #navbar a {
   float: left;
@@ -88,11 +86,9 @@ hr.new4 {
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
-
 }
 
 #navbar #logo {
-
   font-weight: bold;
   transition: 0.4s;
 }
@@ -124,7 +120,6 @@ hr.new4 {
 
 .navbar-toggler {
   background-color: rgb(38, 124, 27, 0.7) !important;
-
 }
 
 .navbar-toggler-icon {
@@ -151,11 +146,8 @@ hr.new4 {
 }
 
 #upBtn:hover {
-
-
   background-color: rgb(38, 124, 27);
   color: rgb(247, 165, 12);
-
   animation-iteration-count: infinite;
 }
 
@@ -165,7 +157,6 @@ hr.new4 {
 #footData {
   margin-top: 50px;
   padding: 10px;
-
 }
 
 
@@ -178,7 +169,6 @@ hr.new4 {
   left: 0;
   bottom: 0;
   color: black;
-
 }
 
 .footContent {
@@ -199,9 +189,9 @@ hr.new4 {
 .imgsize{
   width: 40%;
   height: 100%;
-  
-}
-.liveProjects{
+  }
+
+  .liveProjects{
   margin-top: 60px;
   margin-bottom: 30px;
   
@@ -214,20 +204,16 @@ hr.new4 {
 
 #guncel, #calisma{
   background-color: rgb(38, 124, 27, 0.4) ;
-  padding-top: 2px ;
-  padding-bottom: 2px;
-  height: 60px;
+  padding-top: 3px ;
+  padding-bottom: 3px;
+  height:auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 35%;
+  
   }
 
 
-@media only screen and (max-device-width: 786px) {
-  #calisma, #guncel{
-    width: 80%;
-  } 
-}
+
 
 body, html {
   height: 100%;
@@ -245,6 +231,22 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
 }
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 786px) {

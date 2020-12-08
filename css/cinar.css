@@ -247,7 +247,11 @@ body, html {
   width: 80%;
   padding: 20px;
   text-align: center;
+  display: block;
 }
+ 
+
+
 
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 786px) {
@@ -260,6 +264,10 @@ body, html {
   }
   .liveProjects{
     margin-top: 5px;
+  }
+  .bg-text{
+    display: none;
+    
   }
 }
 

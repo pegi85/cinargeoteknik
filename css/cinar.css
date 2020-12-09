@@ -27,6 +27,16 @@ html {
   color: #ffffff;
 }
 
+.between{
+  padding-right: 15px;
+  padding-left: 10px;
+  
+}
+
+.between:hover{
+  color:rgb(235, 121, 15);
+}
+
 hr.new4 {
   border: 2px solid rgb(255, 255, 255);
 }
@@ -204,11 +214,12 @@ hr.new4 {
 
 #guncel, #calisma{
   background-color: rgb(38, 124, 27, 0.4) ;
-  padding-top: 3px ;
-  padding-bottom: 3px;
-  height:auto;
-  margin-top: 50px;
+  padding-top: 10px ;
+    height:auto;
+  margin-top: 70px;
   margin-bottom: 50px;
+  font-size: 40px;
+  align-items: center;
   
   }
 
@@ -318,34 +329,14 @@ display: block;
 }
 #caroselmob{
   display: none;
-  
+  background-image: url('../assets/images/03-.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: slideBg 12s linear infinite 0s;
-  animation-timing-function: ease-in-out;
-  width: 100%;
+   width: 100%;
   height: 100%;
 }
-@keyframes slideBg {
-  0% {
-    background-image: url('../assets/images/204444.jpg');
-  }
 
-  40% {
-    background-image: url('../assets/images/003-.png');
-  }
-
-
-  80% {
-    background-image: url('../assets/images/03-.jpg');
-  }
-
-  100% {
-    background-image: url('../assets/images/208888.jpg');
-  }
-
-}
 
 
 @media screen and (max-width: 580px) {

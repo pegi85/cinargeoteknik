@@ -18,7 +18,7 @@ function scrollFunction() {
     document.getElementById("navbar").style.backgroundColor = "rgb(0, 0, 0,0.0)";
     document.getElementById("navbar").style.boxShadow = "none";
     document.getElementById("logo").style.marginTop = "30px";
-    document.getElementById("navbar").style.marginTop = "30px";
+    document.getElementById("navbar").style.marginTop = "10px";
   }
 }
 // changing header size when scrolling . header and navigation fixed top when scrolling//

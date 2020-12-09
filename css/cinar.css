@@ -85,7 +85,7 @@ hr.new4 {
   top:0;
   z-index: 99;
   box-shadow: none;
-  margin-top: 30px;
+  margin-top: 10px;
   }
 
 #navbar a {
@@ -114,7 +114,7 @@ hr.new4 {
 @media screen and (max-width: 580px) {
   #navbar {
     padding: 10px 10px !important;
-
+margin-top: 0;
   }
 
   #navbar a {

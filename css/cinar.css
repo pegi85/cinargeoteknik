@@ -328,13 +328,14 @@ display: block;
 
 }
 #caroselmob{
+  top: 0;
   display: none;
-  background-image: url('../assets/images/03-.jpg');
-  background-position: center;
+  background-image: url('../assets/images/03-1.jpg');
+  
   background-repeat: no-repeat;
   background-size: cover;
    width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 

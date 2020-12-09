@@ -263,4 +263,16 @@ html {
   color: rgb(235, 121, 15);
 }
 
+/* .galleri img{
+  background-size: cover;
+  margin: 5px 10px ;
+  cursor: pointer;
+    transition: 0.5s ease ;
+    z-index: 2;
+}
 
+
+.galleri img:hover{
+  transform:scale(1.4);
+  z-index: 5;
+} */

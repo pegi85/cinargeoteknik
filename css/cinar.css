@@ -19,6 +19,21 @@ html {
   
 
 }
+ /* // social media btn hover color// */
+.face a:hover{
+  color:rgb(3, 108, 156);
+}
+.instagram a:hover{
+  color: rgb(252, 114, 59);
+}
+.you a:hover{
+  color: red;
+}
+.what a:hover{
+  color: rgb(4, 187, 4);
+}
+
+
 
 #headerMob {
   background-color: rgb(38, 124, 27);
@@ -85,7 +100,7 @@ hr.new4 {
   top:0;
   z-index: 99;
   box-shadow: none;
-  margin-top: 10px;
+  margin-top: 30px;
   }
 
 #navbar a {
@@ -114,7 +129,7 @@ hr.new4 {
 @media screen and (max-width: 580px) {
   #navbar {
     padding: 10px 10px !important;
-margin-top: 0;
+
   }
 
   #navbar a {
@@ -161,7 +176,9 @@ margin-top: 0;
   animation-iteration-count: infinite;
 }
 
-
+.text a:hover{
+  color: rgb(235, 121, 15);
+}
 
 
 #footData {

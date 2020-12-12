@@ -83,47 +83,69 @@
         width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
         tabindex="0"></iframe>
     <div class="ulas">
-        <p>Bize Ulasin</p>
+        <p>Bize Ulaşın</p>
     </div>
 
     <div class="container boxColor">
-        <form action="/action_page.php">
+        <div class="row d-flex justify-content-center  ">
+            <div class="col-sm-10">
+                <p><strong>Bizimle iletişime geçmek için aşağıda bulunan formu kullanabilirsiniz.</strong></p>
+            </div>
+
+        </div><br>
+
+        <form action="action-job.php" method="post">
             <div class="row d-flex justify-content-center ">
                 <div class="col-sm-5">
                     <div class="form-group">
+                        <label for="usr">Firma Adı:</label>
+                        <input type="text" class="form-control" id="company" name="company">
+                    </div>
+                    <div class="form-group">
                         <label for="usr">İsim Soyisim:</label>
-                        <input type="text" class="form-control" id="usr" placeholder="İsim Soyisim">
+                        <input type="text" class="form-control" id="usr" name="name">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <label for="email">e-posta:</label>
+                        <input type="email" class="form-control" id="email" name="email">
                     </div>
-                    <div class="form-group">
-                        <label for="tel">Telefon:</label>
-                        <input type="text" class="form-control" id="tel" placeholder="Telefon">
-                    </div>
+
                 </div>
                 <div class="col-sm-5">
-                    <label for="comment">Comment:</label>
-                    <textarea class="form-control" rows="5" id="comment"></textarea><br>
-                    <button type="submit" class="btn3 btn-default">Submit</button>
+                    <div class="form-group">
+                        <label for="tel">Telefon:</label>
+                        <input type="text" class="form-control" id="tel" name="tel">
+                    </div>
+                    <label for="comment">Mesaj:</label>
+                    <textarea class="form-control" rows="5" id="comment" name="message"></textarea><br>
+
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center ">
+                <div class="col-sm-5 d-flex justify-content-end">
+                </div>
+                <div class="col-sm-5 d-flex justify-content-end">
+                    <button type="submit" class="btn3 btn-default"> Gönder</button>
                 </div>
             </div>
         </form>
+
+
 
         <div class="row d-flex justify-content-center margining">
             <div class="col-sm-5  ">
                 <p><strong>Çınar Geoteknik Mühendislik İnş. San. ve Tic. Ltd. Şti.</strong></p><br>
                 <p><i class="fas fa-map-marker-alt"></i>Aşağı Öveçler, 1322. Cd. No: 7
                     D:6, 06460 Çankaya/Ankara</p>
-                <p><i class="fas fa-phone-square-alt"></i> (0312)
+                <p><i class="fas fa-phone-square-alt"></i> Tel: (0312)
                     418 05 06</p>
-                <p><i class="fas fa-phone-square-alt"></i> (0312)
+                <p><i class="fas fa-phone-square-alt"></i> Fax: (0312)
                     418 05 06</p>
                 <p>www.cinargeoteknik.com</p>
             </div>
             <div class="col-sm-5"></div>
         </div>
+    </div>
     </div>
     </div>
 

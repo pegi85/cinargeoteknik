@@ -1,3 +1,5 @@
+<?php require_once 'contact-submit.php'; ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -64,10 +66,10 @@
                     <a class="nav-link" href="projeler.html">Projeler</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="kariyer.html">Kariyer</a>
+                    <a class="nav-link" href="kariyer.php">Kariyer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                    <a class="nav-link" href="iletisim.php">İletişim</a>
                 </li>
 
             </ul>
@@ -81,9 +83,15 @@
 
 
     <div class="container boxColor">
-
-
-        <form action="action-kariyer.php" method="post" class="was-validated">
+        <?php if(!empty($statusMessage)){ ?>
+            <div class="row d-flex justify-content-center ">
+                <div class="col-sm-10 d-flex justify-content-center">
+                <h3 ><?php echo $statusMessage; ?> </h3>
+                </div>
+            </div><br>
+           
+        <?php } ?>
+        <form id="contactForm" action="" method="post" class="was-validated" enctype="multipart/form-data">
             <div class="row d-flex justify-content-center ">
                 <div class="col-sm-5">
                     <div class="form-group">
@@ -104,8 +112,9 @@
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Boş Bırakılamaz.</div>
                     </div>
+
                     <div class=" form-group custom-file">
-                        <input type="file" class="custom-file-input" id="customFile" name="atachment">
+                        <input class="custom-file-input" type="file" id="customFile" name="attachment" onchange="checkFile()" accept="application/pdf, application/msword">
                         <label class="custom-file-label" for="customFile">Dosya seçin</label>
                     </div>
 
@@ -118,6 +127,7 @@
 
                 </div>
             </div>
+            <input type="hidden" id="contactId" name="contact-type" value="kariyer">
             <div class="row d-flex justify-content-center ">
                 <div class="col-sm-5 d-flex justify-content-end">
                 </div>
@@ -183,6 +193,27 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        function checkFile() {
+            var file = document.getElementById('customFile').files[0];
+            var sFileName = file.name;
+            var sFileExtension = sFileName.split('.')[sFileName.split('.').length - 1].toLowerCase();
+            var iFileSize = file.size;
+            var iConvert = (file.size / 1048576).toFixed(2);
+
+            if (!(sFileExtension === "pdf" ||
+                sFileExtension === "doc" ||
+                sFileExtension === "docx") || iFileSize > 10485760) { /// 10 mb
+                txt = "File type : " + sFileExtension + "\n\n";
+                txt += "Size: " + iConvert + " MB \n\n";
+                txt += "Lütfen dosyanızın pdf veya doc formatında ve 10 MB'den küçük olduğundan emin olun.\n\n";
+                alert(txt);
+                document.getElementById('customFile').value = '';
+            }
+        
+        }
     </script>
 </body>
 

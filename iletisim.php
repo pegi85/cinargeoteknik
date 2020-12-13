@@ -1,3 +1,5 @@
+<?php require_once 'contact-submit.php'; ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -63,10 +65,10 @@
                     <a class="nav-link" href="projeler.html">Projeler</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="kariyer.html">Kariyer</a>
+                    <a class="nav-link" href="kariyer.php">Kariyer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                    <a class="nav-link" href="iletisim.php">İletişim</a>
                 </li>
 
             </ul>
@@ -87,13 +89,21 @@
     </div>
 
     <div class="container boxColor">
+        <?php if(!empty($statusMessage)){ ?>
+            <div class="row d-flex justify-content-center ">
+                <div class="col-sm-10 d-flex justify-content-center">
+                <h3 ><?php echo $statusMessage; ?> </h3>
+                </div>
+            </div><br>
+           
+        <?php } ?>
         <div class="row d-flex justify-content-center  ">
             <div class="col-sm-10">
                 <p><strong>Bizimle iletişime geçmek için aşağıda bulunan formu kullanabilirsiniz.</strong></p>
             </div>
 
         </div><br>
-        <form action="action-job.php" method="post" class="was-validated">
+        <form action="" method="post" class="was-validated">
             <div class="row d-flex justify-content-center ">
                 <div class="col-sm-5">
                     <div class="form-group">
@@ -125,6 +135,7 @@
                         placeholder="Mesajınızı buraya yazın."></textarea><br>
                 </div>
             </div>
+            <input type="hidden" id="custId" name="contact-type" value="project">
             <div class="row d-flex justify-content-center ">
                 <div class="col-sm-5 d-flex justify-content-end">
                 </div>

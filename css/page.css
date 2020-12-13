@@ -243,6 +243,10 @@ html {
   
 }
 
+.imageFit{
+  height: auto;
+  width: 100%;
+}
 
 .imgsize {
   width: 40%;

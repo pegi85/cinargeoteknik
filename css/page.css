@@ -242,8 +242,11 @@ html {
   
   
 }
-
-.imageFit{
+.responsive{
+  width: 100%;
+  height: auto;
+}
+/* .imageFit{
     width: 100%;
 }
 @media screen and (max-width: 580px) {
@@ -251,7 +254,7 @@ html {
     height:80% ;
 }
 
-}
+} */
 
 .imgsize {
   width: 40%;

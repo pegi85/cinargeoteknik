@@ -259,6 +259,15 @@ html {
   height: 100%;
 }
 
+@media screen and (max-width: 580px) {
+  .projeImgSize{
+    width: 80%;
+    height: auto;
+  }
+
+
+}
+
 .liveProjects {
   margin-top: 60px;
 }

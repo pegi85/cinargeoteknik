@@ -254,6 +254,12 @@ html {
   height: 100%;
 
 }
+
+.galeri-img{
+width: 100%;
+padding: 10px;
+}
+
 .projeImgSize{
   width: 50%;
   height: 100%;

@@ -244,8 +244,13 @@ html {
 }
 
 .imageFit{
-  
-  width: 90%;
+    width: 100%;
+}
+@media screen and (max-width: 580px) {
+  .imageFit{
+    width: 80%;
+}
+
 }
 
 .imgsize {

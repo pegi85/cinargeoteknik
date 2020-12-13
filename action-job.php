@@ -13,15 +13,15 @@ $mail = new PHPMailer;
 $mail->isSMTP();
 $mail->Host     = 'smtp.gmail.com';
 $mail->SMTPAuth = true;
-$mail->Username = 'pegi.arch@gmail.com';
-$mail->Password = '83338610';
+$mail->Username = 'cinargeoteknik@gmail.com';
+$mail->Password = 'ahad3131546';
 $mail->SMTPSecure = 'tls';
 $mail->Port     = 587;
 
-$mail->setFrom('pegi.arch@gmail.com', $_POST['company']);
+$mail->setFrom('cinargeoteknik@gmail.com', $_POST['company']);
 
 // Add a recipient
-$mail->addAddress('b.naderalvojoud@gmail.com');
+$mail->addAddress('pegi.arch@gmail.com');
 
 // Email subject
 $mail->Subject = 'Web Siteden Gelen Proje Formu';
@@ -31,6 +31,16 @@ $mail->isHTML(true);
 
 // Email body content
 $mailContent = $_POST['message'];
+$mailContent = "
+    <h4>Gönderilen Mesaj:</h4>
+    <p>{$mailContent}</p>
+    <br>
+    <h4>Kişisel Bilgiler:</h4>
+    <p> Firma: {$_POST['company']}</p>
+    <p> Ad: {$_POST['name']}</p>
+    <p> e-posta: {$_POST['email']}</p>
+    <p> tel: {$_POST['tel']}</p>    
+    ";
 $mail->Body = $mailContent;
 
 // Send email
@@ -38,7 +48,7 @@ if(!$mail->send()){
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 }else{
-    echo 'Message has been sent';
+    header("Location: iletisim.html");
 }
 
 ?>

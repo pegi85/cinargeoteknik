@@ -254,6 +254,10 @@ html {
   height: 100%;
 
 }
+.projeImgSize{
+  width: 50%;
+  height: 100%;
+}
 
 .liveProjects {
   margin-top: 60px;

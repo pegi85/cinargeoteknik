@@ -91,6 +91,12 @@
             </div><br>
            
         <?php } ?>
+        <div class="row d-flex justify-content-center  ">
+            <div class="col-sm-10 d-flex justify-content-center ">
+                <h2>KARİYER</h2>
+            </div>
+
+        </div><br>
         <form id="contactForm" action="" method="post" class="was-validated" enctype="multipart/form-data">
             <div class="row d-flex justify-content-center ">
                 <div class="col-sm-5">

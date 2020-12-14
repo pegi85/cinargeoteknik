@@ -153,14 +153,14 @@ html {
 
 .btn3 {
   margin-top: 10px;
- 
-  color:white !important;
+
+  color: white !important;
   font-size: 24px !important;
   cursor: pointer;
-  
+
   background-color: rgb(38, 124, 27, 0.4);
   padding: 2px 20px 2px 20px;
-  
+
 
 }
 
@@ -199,6 +199,13 @@ html {
   margin: 50px;
 }
 
+.margining2 {
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+
 .boxColor {
   border-radius: 30px;
   background-color: rgb(38, 124, 27, 0.4);
@@ -216,7 +223,7 @@ html {
 .imgBox {
   background-color: rgb(38, 124, 27, 0.5);
   padding: 5px;
- 
+
 }
 
 
@@ -234,43 +241,45 @@ html {
 }
 
 .ulas {
-  color:  rgb(38, 124, 27);
-  background-color:  rgb(38, 124, 27, 0.4);
+  color: rgb(38, 124, 27);
+  background-color: rgb(38, 124, 27, 0.4);
   font-size: 60px;
   height: 180px;
   text-align: center;
   padding-top: 40px;
-  
-  
-}
-.responsive{
-  width: 80%;
-  height: auto;
-  
+
+
 }
 
-.padrow{
+.responsive {
+  width: 80%;
+  height: auto;
+
+}
+
+.padrow {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .imgsize {
   width: 40%;
   height: 100%;
 
 }
 
-.galeri-img{
-width: 100%;
-padding: 10px;
+.galeri-img {
+  width: 100%;
+  padding: 10px;
 }
 
-.projeImgSize{
+.projeImgSize {
   width: 50%;
   height: 100%;
 }
 
 @media screen and (max-width: 580px) {
-  .projeImgSize{
+  .projeImgSize {
     width: 80%;
     height: auto;
   }

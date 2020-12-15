@@ -196,14 +196,10 @@ html {
 }
 
 .margining {
-  margin: 50px;
+  margin: 30px;
 }
 
-.margining2 {
-  margin-top: 50px;
-  margin-right: 50px;
-  margin-left: 50px;
-}
+
 
 
 .boxColor {
@@ -252,8 +248,9 @@ html {
 }
 
 .responsive {
-  width: 80%;
+  width: 100%;
   height: auto;
+  
 
 }
 

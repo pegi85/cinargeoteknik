@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-    <title>ÇINAR GEOTEKNIK</title>
+    <title>İLETIŞİM-ÇINAR GEOTEKNIK | Geoteknik Rapor | Fore Kazık | cinargeoteknik.com</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

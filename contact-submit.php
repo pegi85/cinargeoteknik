@@ -29,14 +29,14 @@ if (!empty($_POST['name'])){
 
     // SMTP configuration
     $mail->isSMTP();
-    $mail->Host     = 'smtp.gmail.com';
+    $mail->Host     = 'sxb1plzcpnl437837.prod.sxb1.secureserver.net';
     $mail->SMTPAuth = true;
-    $mail->Username = 'cinargeoteknik@gmail.com';
-    $mail->Password = 'ahad3131546';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port     = 587;
+    $mail->Username = 'info@cinargeoteknik.com';
+    $mail->Password = 'ahad8522387';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port     = 465;
 
-    $mail->setFrom('cinargeoteknik@gmail.com', $_POST['name']);
+    $mail->setFrom('info@cinargeoteknik.com', $_POST['name']);
 
     // Add a recipient
     $mail->addAddress('ahad.bahari@gmail.com');

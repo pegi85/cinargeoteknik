@@ -45,7 +45,7 @@
 
 
     <nav id="navbarSub" class="navbar navbar-expand-md  navbar-dark">
-        <a class="navbar-brand" href="index.html"><img id="logo" class="img-fluid  " src="./assets/img/logo5.png"
+        <a class="navbar-brand" href="home.html"><img id="logo" class="img-fluid  " src="./assets/img/logo5.png"
                 alt="logo" /></a>
 
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -54,7 +54,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link " href="index.html">Anasayfa</a>
+                    <a class="nav-link " href="home.html">Anasayfa</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="hakimizda.html">Hakkımızda</a>

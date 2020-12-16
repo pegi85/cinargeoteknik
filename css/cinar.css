@@ -190,8 +190,8 @@ hr.new4 {
 #footer {
   background-color: rgb(38, 124, 27, 0.4);
   background-image: url("../assets/img/leaf.png");
-    
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: auto;
   left: 0;

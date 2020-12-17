@@ -1,14 +1,11 @@
-<?php require_once 'contact-submit.php'; ?>
-
 <!doctype html>
 <html lang="en">
 
 <head>
-    <title>KARİYER-ÇINAR GEOTEKNIK | Geoteknik Rapor | Fore Kazık | cinargeoteknik.com</title>
+    <title>HAKKIMIZDA-ÇINAR GEOTEKNIK | Geoteknik Rapor | Fore Kazık | cinargeoteknik.com</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/page.css">
@@ -25,6 +22,7 @@
 </head>
 
 <body>
+
     <div id="headerMob" class="container-fluid">
 
         <a href="tel:+90-312-418-0506" target="blank"><i class=" btn2 fas fa-phone-alt "></i>(0312)418 0506 </a>
@@ -43,7 +41,6 @@
 
 
 
-
     <nav id="navbarSub" class="navbar navbar-expand-md  navbar-dark">
         <a class="navbar-brand" href="home.html"><img id="logo" class="img-fluid  " src="./assets/img/logo5.png"
                 alt="logo" /></a>
@@ -52,7 +49,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto ">
                 <li class="nav-item">
                     <a class="nav-link " href="home.html">Anasayfa</a>
                 </li>
@@ -66,10 +63,10 @@
                     <a class="nav-link" href="projeler.html">Projeler</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="kariyer.php">Kariyer</a>
+                    <a class="nav-link" href="kariyer.html">Kariyer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iletisim.php">İletişim</a>
+                    <a class="nav-link" href="iletisim.html">İletişim</a>
                 </li>
 
             </ul>
@@ -82,66 +79,18 @@
 
 
 
-    <div class="container boxColor">
-        <?php if(!empty($statusMessage)){ ?>
-            <div class="row d-flex justify-content-center ">
-                <div class="col-sm-10 d-flex justify-content-center">
-                <h3 ><?php echo $statusMessage; ?> </h3>
+    <div class="container-fluid ">
+        <div class="container boxColor ">
+            <div class="row d-flex justify-content-center align-items-center margining">
+
+                <div class="col-sm-6 d-flex justify-content-center  ">
+                    <p>
+                        <strong>Mesajınız başarıyla gönderildi :)</strong>
+                    </p>
                 </div>
-            </div><br>
-           
-        <?php } ?>
-        <div class="row d-flex justify-content-center  ">
-            <div class="col-sm-10 d-flex justify-content-center ">
-                <h2>KARİYER</h2>
+
             </div>
-
-        </div><br>
-        <form id="contactForm" action="" method="post" class="was-validated" enctype="multipart/form-data">
-            <div class="row d-flex justify-content-center ">
-                <div class="col-sm-5">
-                    <div class="form-group">
-                        <label for="usr">İsim Soyisim:</label>
-                        <input type="text" class="form-control" id="usr" name="name" required>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Boş Bırakılamaz.</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">e-posta:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Boş Bırakılamaz.</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="tel">Telefon:</label>
-                        <input type="text" class="form-control" id="tel" name="tel" required>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Boş Bırakılamaz.</div>
-                    </div>
-
-                    <div class=" form-group custom-file">
-                        <input class="custom-file-input" type="file" id="customFile" name="attachment" onchange="checkFile()" accept="application/pdf, application/msword">
-                        <label class="custom-file-label" for="customFile">Dosya seçin</label>
-                    </div>
-
-                </div>
-                <div class="col-sm-5">
-
-                    <label for="comment">Mesaj:</label>
-                    <textarea class="form-control" rows="11" id="comment" name="message"
-                        placeholder="Mesajınızı buraya yazın."></textarea>
-
-                </div>
-            </div>
-            <input type="hidden" id="contactId" name="contact-type" value="kariyer">
-            <div class="row d-flex justify-content-center ">
-                <div class="col-sm-5 d-flex justify-content-end">
-                </div>
-                <div class="col-sm-5 d-flex justify-content-end">
-                    <button type="submit" class="btn3 btn-default">Gönder</button>
-                </div>
-            </div>
-        </form>
+        </div>
     </div>
     <div id="footer" class="container-fluid ">
         <div id="footData" class="container">
@@ -150,7 +99,8 @@
                     <p><strong>Hakkımızda</strong></p>
                     <hr>
                     <p>
-                        <strong>Çınar Geoteknik Mühendislik İnş. San. ve Tic. Ltd. Şti.</strong><br> İlkeli ve modern
+                        <strong>Çınar Geoteknik Mühendislik İnş. San. ve Tic. Ltd. Şti.</strong><br>
+                        İlkeli ve modern
                         çalışmayı ilke edinerek kar amacı olmadan mühendislik çözümleri sunarken, güvenilir hizmete
                         dayanan bir ekiple Ocak 2018’de kurulmuştur.
                     </p>
@@ -190,33 +140,12 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./js/cinar.js"></script>
+    <script src="./js/page.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-
-    <script>
-        function checkFile() {
-            var file = document.getElementById('customFile').files[0];
-            var sFileName = file.name;
-            var sFileExtension = sFileName.split('.')[sFileName.split('.').length - 1].toLowerCase();
-            var iFileSize = file.size;
-            var iConvert = (file.size / 1048576).toFixed(2);
-
-            if (!(sFileExtension === "pdf" ||
-                sFileExtension === "doc" ||
-                sFileExtension === "docx") || iFileSize > 10485760) { /// 10 mb
-                txt = "File type : " + sFileExtension + "\n\n";
-                txt += "Size: " + iConvert + " MB \n\n";
-                txt += "Lütfen dosyanızın pdf veya doc formatında ve 10 MB'den küçük olduğundan emin olun.\n\n";
-                alert(txt);
-                document.getElementById('customFile').value = '';
-            }
-        
-        }
     </script>
 </body>
 

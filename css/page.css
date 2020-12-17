@@ -181,7 +181,7 @@ html {
 
 #footer {
   background-color: rgb(38, 124, 27, 0.4);
-  background-image: url('/assets/img/leaf.png');
+  background-image: url("../assets/img/leaf.png");
   background-repeat: no-repeat;
   background-size: cover;
   

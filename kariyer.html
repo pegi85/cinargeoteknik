@@ -1,13 +1,12 @@
-<?php require_once 'contact-submit.php'; ?>
-
 <!doctype html>
 <html lang="en">
 
 <head>
-    <title>İLETIŞİM-ÇINAR GEOTEKNIK | Geoteknik Rapor | Fore Kazık | cinargeoteknik.com</title>
+    <title>KARİYER-ÇINAR GEOTEKNIK | Geoteknik Rapor | Fore Kazık | cinargeoteknik.com</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/page.css">
@@ -51,7 +50,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto ">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link " href="home.html">Anasayfa</a>
                 </li>
@@ -65,10 +64,10 @@
                     <a class="nav-link" href="projeler.html">Projeler</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="kariyer.php">Kariyer</a>
+                    <a class="nav-link" href="kariyer.html">Kariyer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iletisim.php">İletişim</a>
+                    <a class="nav-link" href="iletisim.html">İletişim</a>
                 </li>
 
             </ul>
@@ -80,36 +79,18 @@
     <button onclick="topFunction()" id="upBtn" title="Go to top"><i class='fas'>&#xf0aa;</i></button>
 
 
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24490.662614160665!2d32.82806!3d39.88918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d667fb1c9b7549f!2zw4dJTkFSIEdFT1RFS07EsEsgTcOcSEVORMSwU0zEsEsgTFRELiDFnlTEsC4!5e0!3m2!1sen!2str!4v1607592284537!5m2!1sen!2str"
-        width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
-    <div class="ulas">
-        <p>Bize Ulaşın</p>
-    </div>
 
     <div class="container boxColor">
-        <?php if(!empty($statusMessage)){ ?>
-            <div class="row d-flex justify-content-center ">
-                <div class="col-sm-10 d-flex justify-content-center">
-                <h3 ><?php echo $statusMessage; ?> </h3>
-                </div>
-            </div><br>
-           
-        <?php } ?>
         <div class="row d-flex justify-content-center  ">
-            <div class="col-sm-10">
-                <p><strong>Bizimle iletişime geçmek için aşağıda bulunan formu kullanabilirsiniz.</strong></p>
+            <div class="col-sm-10 d-flex justify-content-center ">
+                <h2>KARİYER</h2>
             </div>
 
         </div><br>
-        <form action="" method="post" class="was-validated">
+        <form id="contactForm" action="contact-submit.php" method="post" class="was-validated"
+            enctype="multipart/form-data">
             <div class="row d-flex justify-content-center ">
                 <div class="col-sm-5">
-                    <div class="form-group">
-                        <label for="usr">Firma Adı:</label>
-                        <input type="text" class="form-control" id="company" name="company">
-                    </div>
                     <div class="form-group">
                         <label for="usr">İsim Soyisim:</label>
                         <input type="text" class="form-control" id="usr" name="name" required>
@@ -122,50 +103,38 @@
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Boş Bırakılamaz.</div>
                     </div>
-                </div>
-                <div class="col-sm-5">
                     <div class="form-group">
                         <label for="tel">Telefon:</label>
                         <input type="text" class="form-control" id="tel" name="tel" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Boş Bırakılamaz.</div>
                     </div>
+
+                    <div class=" form-group custom-file">
+                        <input class="custom-file-input" type="file" id="customFile" name="attachment"
+                            onchange="checkFile()" accept="application/pdf, application/msword">
+                        <label class="custom-file-label" for="customFile">Dosya seçin</label>
+                    </div>
+
+                </div>
+                <div class="col-sm-5">
+
                     <label for="comment">Mesaj:</label>
-                    <textarea class="form-control" rows="5" id="comment" name="message"
-                        placeholder="Mesajınızı buraya yazın."></textarea><br>
+                    <textarea class="form-control" rows="11" id="comment" name="message"
+                        placeholder="Mesajınızı buraya yazın."></textarea>
+
                 </div>
             </div>
-            <input type="hidden" id="custId" name="contact-type" value="project">
+            <input type="hidden" id="contactId" name="contact-type" value="kariyer">
             <div class="row d-flex justify-content-center ">
                 <div class="col-sm-5 d-flex justify-content-end">
                 </div>
                 <div class="col-sm-5 d-flex justify-content-end">
-                    <button type="submit" class="btn3 btn-default"> Gönder</button>
+                    <button type="submit" class="btn3 btn-default">Gönder</button>
                 </div>
             </div>
         </form>
-
-
-
-        <div class="row d-flex justify-content-center margining">
-            <div class="col-sm-5  ">
-                <p><strong>Çınar Geoteknik Mühendislik İnş. San. ve Tic. Ltd. Şti.</strong></p><br>
-                <p><i class="fas fa-map-marker-alt"></i>Aşağı Öveçler, 1322. Cd. No: 7
-                    D:6, 06460 Çankaya/Ankara</p>
-                <p><i class="fas fa-phone-square-alt"></i> Tel: (0312)
-                    418 05 06</p>
-                <p><i class="fas fa-phone-square-alt"></i> Fax: (0312)
-                    418 05 06</p>
-                <p>www.cinargeoteknik.com</p>
-            </div>
-            <div class="col-sm-5"></div>
-        </div>
     </div>
-    </div>
-    </div>
-
-
-
     <div id="footer" class="container-fluid ">
         <div id="footData" class="container">
             <div class="row d-flex justify-content-center ">
@@ -213,12 +182,33 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./js/cinar.js"></script>
+    <script src="./js/page.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        function checkFile() {
+            var file = document.getElementById('customFile').files[0];
+            var sFileName = file.name;
+            var sFileExtension = sFileName.split('.')[sFileName.split('.').length - 1].toLowerCase();
+            var iFileSize = file.size;
+            var iConvert = (file.size / 1048576).toFixed(2);
+
+            if (!(sFileExtension === "pdf" ||
+                    sFileExtension === "doc" ||
+                    sFileExtension === "docx") || iFileSize > 10485760) { /// 10 mb
+                txt = "File type : " + sFileExtension + "\n\n";
+                txt += "Size: " + iConvert + " MB \n\n";
+                txt += "Lütfen dosyanızın pdf veya doc formatında ve 10 MB'den küçük olduğundan emin olun.\n\n";
+                alert(txt);
+                document.getElementById('customFile').value = '';
+            }
+
+        }
     </script>
 </body>
 

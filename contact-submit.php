@@ -9,7 +9,8 @@ require 'PHPMailer/SMTP.php';
 
 if (!empty($_POST['name'])){
     if (!empty($_FILES["attachment"]["name"])){
-        $uploadDir = "uploads/";
+        //$uploadDir = "uploads/";
+        $uploadDir = "../tmp/uploads/";
         $fileName = basename($_FILES["attachment"]["name"]);
         $filePath = $uploadDir . $fileName;
         $fileInfo = explode('.', $filePath);
@@ -37,9 +38,11 @@ if (!empty($_POST['name'])){
     $mail->Port     = 465;
 
     $mail->setFrom('info@cinargeoteknik.com', $_POST['name']);
+    // $mail->setFrom('pegi.arch@gmail.com', $_POST['name']);
 
     // Add a recipient
-    $mail->addAddress('ahad.bahari@gmail.com');
+    // $mail->addAddress('ahad.bahari@gmail.com');
+    $mail->addAddress('b.naderalvojoud@gmail.com');
     $mail->isHTML(true);
 
     // Email subject
@@ -57,7 +60,7 @@ if (!empty($_POST['name'])){
         if (!empty($uploadedFile)){
             $mail->AddAttachment($uploadedFile);
         }
-    }else{
+    } else {
         $mail->Subject = 'Web Siteden Gelen Proje Formu';
         $mailBody = "
         <h4>Gönderilen Mesaj:</h4>
@@ -75,11 +78,11 @@ if (!empty($_POST['name'])){
     
     // Send email
     if(!$mail->send()){
-        $statusMessage = 'Mesajınız teknik bir sebepten dolayı gönderilemedi.';
-        //echo 'Message could not be sent.';
-        //cho 'Mailer Error: ' . $mail->ErrorInfo;
+        header("Location: fail.html");       
     }else{
-        $statusMessage = 'Mesajınız başarıyla gönderildi.';
+        header("Location: success.html");
     }
+} else {
+    header("Location: ".$_POST["contact-type"].".html");
 }
 ?>
